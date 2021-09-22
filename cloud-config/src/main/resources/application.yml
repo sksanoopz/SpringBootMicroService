@@ -1,0 +1,13 @@
+server:
+  port: 9256
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sksanoopz/config-server1
+          clone-on-start: true
+  profiles:
+    active: native
